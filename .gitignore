@@ -6,6 +6,9 @@ __pycache__/
 # C extensions
 *.so
 
+# local data folder
+/Users/nicholastjandra/documents/flatiron/phase_3/DSC-Phase3-Project/data/localdata/
+
 # DS Store
 .DS_Store
 
