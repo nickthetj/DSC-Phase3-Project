@@ -13,7 +13,7 @@ The City of Chicago would like to gain more insight into traffic accidents given
 ## **Business Problem**
 Vision Zero believes that the loss of even a single life is unacceptable. This is especially true because traffic accidents are not actually accidents at all; they are crashes, because they are preventable. In order to move Chicago closer to this vision, our data analysis led to the following recommendations:
 
-Pedestrian/Cyclist Safety<br>
+Pedestrian Safety<br>
 Traffic Rule Adherence<br>
 
 Continue below to see how we arrived at these recommendations and what Chicago can do to prioritize these measures.
@@ -33,19 +33,18 @@ We trained a Logistic Regression Model as well as a Decision Tree Model. As Fata
 
 We tuned our model with GridSearch to constantly improve our recall score. We chose to focus on recall score to minimize the likelihood of our model predicting a crash as Not Fatal, when it was in fact Fatal.
 
-## Conclusions
+## **Model**
 Our best model was the Logistic Regression with a recall score of .71. Aa you can see in the confusion matrix, the model is prioritizing the reduction of False Negatives, aka predicting a crash as Not Fatal when it was in fact Fatal. 
 CONFUSION MATRIX HERE
 
-Our model revealed that the following coefficients were the most influential with these predictions. The light blue are the features of the Primary Cause of the Crash, and the orange are the features of the Type of Crash. 
-TOP COEFFICIENTS HERE
+Our model also revealed which coefficients were most relevant in terms of predicting fatalities. Here you can see that dark blue is the Primary Cause of Crash, light blue is the Traffic Control Device, orange is the Crash Type, and yellow is the Maneuver the car took resulting in the crash. <br>
+![Sheet 2 (1)](https://github.com/nickthetj/DSC-Phase3-Project/assets/126971652/bfa16c00-66b8-498e-bea6-6f0a592fddd9)
 
-As you can see from the coefficients above, ...HERE
+To get a further analysis on those coefficients, we calculated the Fatality percentage for each. <br>
+![Sheet 3 (3)](https://github.com/nickthetj/DSC-Phase3-Project/assets/126971652/8c68050a-9466-4418-bf19-91270fcbb117) <br>
+To no surprise, the top cause of a fatal crash is the Physical Condition of the Driver. Following that is Exceeding Authorized Speed Limit and Driving on the wrong side of the road. While Physical Condition of the Driver is a pressing issue, we came up with an easy to implement recommendation that may be able to curb the speed limit issue and Driving on the Wrong side of the road. As for the Crash Type, we focused our recommendation on minimizing Pedestrian fatalities, but believe it can also minimize the other features as well. 
 
-To get a further analysis on those coefficients, we calculated the Fatality percentage for each. 
-TOP PERCENTAGES HERE
-To no surprise, the top cause of a fatal crash is the Physical Condition of the Driver. Following that is Disregarding Traffic Signals, and Operating Vehicle in Erratic or Aggressive Manner. While Physical Condition of the Driver is a pressing issue, we came up with an easy to implement recommendation that may be able to curb the other two. As for the Type of Crashes, we focused our recommendations on minimizing Pedestrian and Pedacyclists, but believe it can also minimize the other features as well. 
-
+## **Recommendations**
 We recommend Chicago look to the Strong Towns organization and what they have accomplished in restructuring the development of cities to be more suitable and safer for citizens.
 
 Our first recommendation is to redesign your crosswalks. Raising the Crosswalks increases its visibility and makes it clear to both driver and pedestrian that this area of the street is designed for the pedestrian's safety first by forcing the driver to slow down as they approach.
@@ -68,7 +67,7 @@ For the crash location investigation, the datasets we worked with provided some 
 
 For the BAC investigation, the top preliminary cause and fatal percentage of fatal crashes was the Physical Condition of the Driver. With more time we could investigate how much of this was due to drunk drivers or drivers under the influence of drugs.
 
-## Thank You!
+## **Thank You**
 Thank you for taking the time to review our recommendations.
 We hope this information helps and we look forward to working with you more on the next steps.
 
