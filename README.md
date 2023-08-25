@@ -54,7 +54,7 @@ Our first recommendation is to redesign your crosswalks. Raising the Crosswalks 
 Our Second recommendation is to narrow the size of the street by introducing bike lanes. Many city streets have low speed limits but are wide by design so that drivers feel comfortable speeding. By tightening the space around them and introducing bake lanes with barriers to separate them from the the car lanes, drivers will be more attentive to their surroundings and more inclined to slow down.<br>
 ![image](https://github.com/nickthetj/DSC-Phase3-Project/assets/126971652/2ae7b332-5d82-42c8-8aff-b9999b83ae10)
 
-In conclusion, our model with .71 recall score shows two main ideas: <br>
+In conclusion, our model with .70 recall score shows two main ideas: <br>
 One, that Pedestrians and Cyclists are most at risk for fatalities.<br>
 And two, that fatal crashes are likely to be caused by drivers not following the rules of the road.<br>
 We believe Chicago can move closer to zero fatalities by implementing raised crosswalks and narrower streets via protected bike lanes.
