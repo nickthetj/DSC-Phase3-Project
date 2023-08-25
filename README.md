@@ -34,8 +34,9 @@ We trained a Logistic Regression Model as well as a Decision Tree Model. As Fata
 We tuned our model with GridSearch to constantly improve our recall score. We chose to focus on recall score to minimize the likelihood of our model predicting a crash as Not Fatal, when it was in fact Fatal.
 
 ## **Model**
-Our best model was the Logistic Regression with a recall score of .70. Aa you can see in the confusion matrix, the model is minimizing the amount of False Negatives. In other words, the model is minimizing the chance that it predicts a crash as Not Fatal when it was in fact Fatal. <br>
-![Screenshot 2023-08-25 at 4 20 56 PM](https://github.com/nickthetj/DSC-Phase3-Project/assets/126971652/174eae3d-98ba-4a94-ab11-98ef43b9b3e2)
+Our best model was the Logistic Regression with a recall score of .70. Aa you can see in the confusion matrix, the model is minimizing the amount of False Negatives. In other words, the model is min!
+imizing the chance that it predicts a crash as Not Fatal when it was in fact Fatal. <br>
+![Screenshot 2023-08-25 at 4 27 25 PM](https://github.com/nickthetj/DSC-Phase3-Project/assets/126971652/f10271c2-7444-4899-8d63-2be27491937f)
 
 Our model also revealed which coefficients were most relevant in terms of predicting fatalities. Here you can see that dark blue is the Primary Cause of Crash, light blue is the Traffic Control Device, orange is the Crash Type, and yellow is the Maneuver the car took resulting in the crash. <br>
 ![Sheet 2 (1)](https://github.com/nickthetj/DSC-Phase3-Project/assets/126971652/bfa16c00-66b8-498e-bea6-6f0a592fddd9)
