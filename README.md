@@ -21,10 +21,10 @@ Continue below to see how we arrived at these recommendations and what Chicago c
 ## **Data Understanding**
 ![image](https://github.com/nickthetj/DSC-Phase3-Project/assets/126971652/5bb378f0-e0b8-467f-bb04-e8fbb7767fa5)
 
-The datasets used in this analysis come from the City of Chicago's Data Portal. We analyzed over 740,00 crashes from the City of Chicago's Data Portal ranging from 2016 to 2022. This data contained information on the crashes themselves, the outcome of the people involved, and information on the vehicles involved. Due to the size of this data, it was unable to be stored in GitHub. To access the data, please click on the hyperlinkes here:<br>
-[crashes]([url](https://data.cityofchicago.org/Transportation/Traffic-Crashes-Crashes/85ca-t3if)) <br>
-[people]([url](https://data.cityofchicago.org/Transportation/Traffic-Crashes-People/u6pd-qa9d)) <br>
-[vehicles]([url](https://data.cityofchicago.org/Transportation/Traffic-Crashes-Vehicles/68nd-jvt3)) <br>
+The datasets used in this analysis come from the City of Chicago's Data Portal. We analyzed over 740,00 crashes from the City of Chicago's Data Portal ranging from 2016 to 2022. This data contained information on the crashes themselves, the outcome of the people involved, and information on the vehicles involved. Due to the size of this data, it was unable to be stored in GitHub. To access the data, please click on the links here:<br>
+Crashes: https://data.cityofchicago.org/Transportation/Traffic-Crashes-Crashes/85ca-t3if <br>
+People: https://data.cityofchicago.org/Transportation/Traffic-Crashes-People/u6pd-qa9d <br>
+Vehicles: https://data.cityofchicago.org/Transportation/Traffic-Crashes-Vehicles/68nd-jvt3 <br>
 
 ## **Data Preparation and Analysis**
 A core component of Vision Zero is that the loss of even a single life is unacceptable. To gain insight into how to prevent deaths, we classified the data into two categories: crashes that resulted in Fatalities, and crashes that did not result in Fatalities. 
