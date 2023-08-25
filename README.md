@@ -48,7 +48,7 @@ To no surprise, the top cause of a fatal crash is the Physical Condition of the 
 
 We recommend Chicago look to the Strong Towns organization and what they have accomplished in restructuring the development of cities to be more suitable and safer for citizens.
 
-Our first recommendation is to redesign your crosswalks. Raising the Crosswalks increases  its visibility and makes it clear to both driver and pedestrian that this area of the street is designed for the pedestrian's safety first by forcing the driver to slow down as they approach.
+Our first recommendation is to redesign your crosswalks. Raising the Crosswalks increases its visibility and makes it clear to both driver and pedestrian that this area of the street is designed for the pedestrian's safety first by forcing the driver to slow down as they approach.
 ![image](https://github.com/nickthetj/DSC-Phase3-Project/assets/126971652/7f05dd49-1770-48a6-8b30-e2e964a71a86)
 
 Our Second recommendation is to narrow the size of the street by introducing bike lanes. Many city streets have low speed limits but are wide by design so that drivers feel comfortable speeding. By tightening the space around them and introducing bake lanes with barriers to separate them from the the car lanes, drivers will be more attentive to their surroundings and more inclined to slow down.
@@ -74,18 +74,16 @@ We hope this information helps and we look forward to working with you more on t
 
 Sincerely, <br>
 Bobby Daly, Michael Romanski, Nicholas Tjandra <br>
-Airflix Studios
 
 ## Further Details
-Further details are available in the full analysis presented in the CHANGE THIS! -> [Jupyter Notebook](https://github.com/rbdaly16/Movie-Data-Analysis/blob/bobby/Movie%20Data%20Analysis.ipynb). 
+Further details are available in the full analysis presented in the CHANGE THIS! -> [Jupyter Notebook](https://github.com/nickthetj/DSC-Phase3-Project/blob/main/notebooks/Final%20EDA%20Notebook.ipynb). 
 
 ## Repository Structure
 ```
 ├── data
-      |── dataplaceholder.txt
 ├── notebooks
-├── images
 ├── README.md
+├── LICENSE
 ├── .gitignore
 ├── .DS_Store
 ├── The Road to Vision Zero Presentation.pdf
