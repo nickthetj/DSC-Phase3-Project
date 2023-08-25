@@ -31,38 +31,40 @@ We trained a Logistic Regression Model as well as a Decision Tree Model. As Fata
 
 We tuned our model with GridSearch to constantly improve our recall score. We chose to focus on recall score to minimize the likelihood of our model predicting a crash as Not Fatal, when it was in fact Fatal.
 
-## Recommendations
-Our best model was the Logistic Regression with a recall score of .71. Inspecting the Coefficients, we found that HERE... were the most prevalent in predicting whether a crash would be Fatal or Not Fatal. 
-Relevant features
+## Conclusions
+Our best model was the Logistic Regression with a recall score of .71. Aa you can see in the confusion matrix, the model is prioritizing the reduction of False Negatives, aka predicting a crash as Not Fatal when it was in fact Fatal. 
+CONFUSION MATRIX HERE
 
-To further investigate the crashes, we used the model to analyze which features were most prevalent in fatal crashes. 
+Our model revealed that the following coefficients were the most influential with these predictions. The light blue are the features of the Primary Cause of the Crash, and the orange are the features of the Type of Crash. 
+TOP COEFFICIENTS HERE
 
-**Budget**
-For budget, our recommendation is that you have to spend money to make money. As we can see in our linear regression graph, our data suggests that the bigger the budget, the bigger the return. Furthermore the R^2 value suggests that the budget accounts for 63% of variance in worldwide gross. This, along with a p-value smaller than .05 from the anova, shows that we can reject the null hypothesis and say that a film's budget does impact it's worldwide gross.
-![Screenshot 2023-08-04 at 3 35 16 PM](https://github.com/rbdaly16/Movie-Data-Analysis/assets/126971652/93dea09e-ab2e-4161-94b5-f6649708e2a7)
+As you can see from the coefficients above, ...HERE
 
-**Genre**
-For genre, we split movies out into each category they fell into and plotted the average worldwide gross by genre. Based on the graph below, we recommend creating adventurous, musical animations. These three genres had the highest average worldwide gross in our data and can easily pair well together in a film, as Olaf has proved.
-![Screenshot 2023-08-04 at 3 36 28 PM](https://github.com/rbdaly16/Movie-Data-Analysis/assets/126971652/ab293549-e729-4f8b-8cc4-950b9d146187)
+To get a further analysis on those coefficients, we calculated the Fatality percentage for each. 
+TOP PERCENTAGES HERE
+To no surprise, the top cause of a fatal crash is the Physical Condition of the Driver. Following that is Disregarding Traffic Signals, and Operating Vehicle in Erratic or Aggressive Manner. While Physical Condition of the Driver is a pressing issue, we came up with an easy to implement recommendation that may be able to curb the other two. As for the Type of Crashes, we focused our recommendations on minimizing Pedestrian and Pedacyclists, but believe it can also minimize the other features as well. 
 
+We recommend Chicago look to the Strong Towns organization and what they have accomplished in restructuring the development of cities to be more suitable and safer for citizens.
 
-**Director**
-For director, we created a director rating by averaging all of the IMDb movie ratings for each director. From there we joined this data with the worldwide gross data to see which directors acquired the most gross across the globe. Directors have fans, and if you want to start building a brand, why not start with a director who has a large population already on board?
+Our first recommendation is to redesign your crosswalks. Raising the Crosswalks increases  its visibility and makes it clear to both driver and pedestrian that this area of the street is designed for the pedestrian's safety first by forcing the driver to slow down as they approach.
+RAISED CROSSWALK PIC HERE
 
-This graph represents the best available Directors who also are Writers for the films they make based on the director rating score we calculated. For Western-Centric audiences, we recommend Christopher Nolan, Damien Chazelle, or Wes Anderson. Nuri Bilge Ceylan did not have any data regarding budget and gross, so we do not feel comfortable selecting him. For the Indian Film market, S.S. Rajamouli would be an excellent selection as Director. Neeraj Pandey and Anurag Kashyap did not have any data regarding budget and gross, so we do not feel comfortable selecting them.
+Our Second recommendation is to narrow the size of the street by introducing bike lanes. Many city streets have low speed limits but are wide by design so that drivers feel comfortable speeding. By tightening the space around them and introducing bake lanes with barriers to separate them from the the car lanes, drivers will be more attentive to their surroundings and more inclined to slow down.
+NARROW LANE PIC HERE
 
-![Screenshot 2023-08-04 at 3 37 46 PM](https://github.com/rbdaly16/Movie-Data-Analysis/assets/126971652/b0a0eae9-560f-46d1-81a0-e3e3ec4ba467)
-![Screenshot 2023-08-04 at 3 37 21 PM](https://github.com/rbdaly16/Movie-Data-Analysis/assets/126971652/d49a1900-1d35-4433-a647-a6c014c154ad)
-
+In conclusion, our model with .71 recall score shows two main ideas: <br>
+One, that Pedestrians and Cyclists are most at risk for fatalities.<br>
+And two, that fatal crashes are likely to be caused by drivers not following the rules of the road.<br>
+We believe Chicago can move closer to zero fatalities by implementing raised crosswalks and narrower streets via protected bike lanes.
 
 ## **Next Steps**
 There are a few steps we would like to take to further limit fatalities in car crashes:<br>
 1. Crash Location Investigation
 2. BAC Investigation
    
-The datasets we worked with provided some information available on the location of every crash, but it was broken down by street. It might be easier and more efficient to break the city down into areas or districts to highlight particular problem areas of the city that could be reformed.
+For the crash location investigation, the datasets we worked with provided some information available on the location of every crash, but it was broken down by street. It might be easier and more efficient to break the city down into areas or districts to highlight particular problem areas of the city that could be reformed.
 
-Furthermore, the top preliminary cause and fatal percentage of fatal crashes was the Physical Condition of the Driver. With more time we could investigate how much of this was due to drunk drivers or drivers under the influence of drugs.
+For the BAC investigation, the top preliminary cause and fatal percentage of fatal crashes was the Physical Condition of the Driver. With more time we could investigate how much of this was due to drunk drivers or drivers under the influence of drugs.
 
 ## Thank You!
 Thank you for taking the time to review our recommendations.
@@ -78,11 +80,12 @@ Further details are available in the full analysis presented in the CHANGE THIS!
 ## Repository Structure
 ```
 ├── data
+      |── dataplaceholder.txtlemme
 ├── Scratch_notebook_folder
 ├── images
 ├── README.md
 ├── .gitignore
 ├── .DS_Store
-├── Movie Data Analysis Presentation.pdf
-└── Movie Data Analysis final.ipynb
+├── The Road to Vision Zero Presentation.pdf
+└── Final EDA Notebook.ipynb
 ```
