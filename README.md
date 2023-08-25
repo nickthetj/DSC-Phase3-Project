@@ -6,7 +6,6 @@ Bobby Daly, DS; Michael Romanski, DS; Nicholas Tjandra, DS
 ![image](https://github.com/nickthetj/DSC-Phase3-Project/assets/126971652/9e88f1d6-2353-4ad1-95ec-1f7329edad13)
 
 
-
 ## **Overview**
 The City of Chicago would like to gain more insight into traffic accidents given information about the car, the people in the car, and the road conditions. They plan on pursuing the goals of Vision Zero, an organization with a strategy to eliminate all traffic fatalities and severe injuries, while increasing safe, healthy, equitable mobility for all. Our project involves the examination of crash data sourced from the City of Chicago's Data Portal to further this mission. By analyzing this data, we hope to create a predictive model that can help evaluate trends across crashes. Through this comprehensive analysis, we will be able to make recommendations for Chicago to make their streets safer. 
 
@@ -22,7 +21,10 @@ Continue below to see how we arrived at these recommendations and what Chicago c
 ## **Data Understanding**
 ![image](https://github.com/nickthetj/DSC-Phase3-Project/assets/126971652/5bb378f0-e0b8-467f-bb04-e8fbb7767fa5)
 
-The datasets used in this analysis come from the City of Chicago's Data Portal. We analyzed over 740,00 crashes from the City of Chicago's Data Portal ranging from 2016 to 2022. This data contained information on the [crashes]([url](https://data.cityofchicago.org/Transportation/Traffic-Crashes-Crashes/85ca-t3if)) themselves, the outcome of the [people]([url](https://data.cityofchicago.org/Transportation/Traffic-Crashes-People/u6pd-qa9d)) involved, and information on the [vehicles]([url](https://data.cityofchicago.org/Transportation/Traffic-Crashes-Vehicles/68nd-jvt3)) involved.
+The datasets used in this analysis come from the City of Chicago's Data Portal. We analyzed over 740,00 crashes from the City of Chicago's Data Portal ranging from 2016 to 2022. This data contained information on the crashes themselves, the outcome of the people involved, and information on the vehicles involved. Due to the size of this data, it was unable to be stored in GitHub. To access the data, please click on the hyperlinkes here:<br>
+[crashes]([url](https://data.cityofchicago.org/Transportation/Traffic-Crashes-Crashes/85ca-t3if)) <br>
+[people]([url](https://data.cityofchicago.org/Transportation/Traffic-Crashes-People/u6pd-qa9d)) <br>
+[vehicles]([url](https://data.cityofchicago.org/Transportation/Traffic-Crashes-Vehicles/68nd-jvt3)) <br>
 
 ## **Data Preparation and Analysis**
 A core component of Vision Zero is that the loss of even a single life is unacceptable. To gain insight into how to prevent deaths, we classified the data into two categories: crashes that resulted in Fatalities, and crashes that did not result in Fatalities. 
@@ -47,10 +49,10 @@ To no surprise, the top cause of a fatal crash is the Physical Condition of the 
 We recommend Chicago look to the Strong Towns organization and what they have accomplished in restructuring the development of cities to be more suitable and safer for citizens.
 
 Our first recommendation is to redesign your crosswalks. Raising the Crosswalks increases  its visibility and makes it clear to both driver and pedestrian that this area of the street is designed for the pedestrian's safety first by forcing the driver to slow down as they approach.
-RAISED CROSSWALK PIC HERE
+![image](https://github.com/nickthetj/DSC-Phase3-Project/assets/126971652/7f05dd49-1770-48a6-8b30-e2e964a71a86)
 
 Our Second recommendation is to narrow the size of the street by introducing bike lanes. Many city streets have low speed limits but are wide by design so that drivers feel comfortable speeding. By tightening the space around them and introducing bake lanes with barriers to separate them from the the car lanes, drivers will be more attentive to their surroundings and more inclined to slow down.
-NARROW LANE PIC HERE
+![image](https://github.com/nickthetj/DSC-Phase3-Project/assets/126971652/2ae7b332-5d82-42c8-8aff-b9999b83ae10)
 
 In conclusion, our model with .71 recall score shows two main ideas: <br>
 One, that Pedestrians and Cyclists are most at risk for fatalities.<br>
@@ -80,8 +82,8 @@ Further details are available in the full analysis presented in the CHANGE THIS!
 ## Repository Structure
 ```
 ├── data
-      |── dataplaceholder.txtlemme
-├── Scratch_notebook_folder
+      |── dataplaceholder.txt
+├── notebooks
 ├── images
 ├── README.md
 ├── .gitignore
