@@ -33,6 +33,7 @@ We tuned our model with GridSearch to constantly improve our recall score. We ch
 
 ## Recommendations
 Our best model was the Logistic Regression with a recall score of .71. Inspecting the Coefficients, we found that HERE... were the most prevalent in predicting whether a crash would be Fatal or Not Fatal. 
+Relevant features
 
 To further investigate the crashes, we used the model to analyze which features were most prevalent in fatal crashes. 
 
